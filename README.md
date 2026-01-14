@@ -1,73 +1,57 @@
-# Nerede Yesek? - Social Food Map
+# Nerede Yeşek? – Social Food Map
 
-**GMT 458 Web GIS Final Project**
+**GMT 458 – Web GIS Final Project**
 
-## What is This?
+---
 
-Discover restaurants in Ankara on a map, check-in to earn points, make group decisions with friends!
+## Project Overview
 
-### Features
-- Interactive map (filtering, search)
-- Gamification (XP, levels, badges)
-- Leaderboard
-- Food Challenges
-- Food Squad (group voting)
+*Nerede Yeşek?* is a **full-stack Web GIS application** developed as the final project for the GMT 458 Web GIS course.  
+The application allows users to discover restaurants on an interactive map, add new locations, and interact with the system through basic gamification features.
 
-## Installation
+The main focus of the project is on **Web GIS concepts**, **spatial databases**, and **client–server architecture**.
 
-### Requirements
-- Node.js
-- PostgreSQL + PostGIS
-- MongoDB
+---
 
-### Quick Start
-```bash
-# 1. Backend
-cd backend
-npm install
-# Edit .env file
-npm run dev
+## Project Goals
 
-# 2. Database
-createdb nerede_yesek
-psql -d nerede_yesek -f database/init-postgres.sql
-node database/init-mongodb.js
+- Develop a **Web GIS application** with an interactive map
+- Use a **spatial database (PostGIS)** for location-based queries
+- Implement **RESTful API** and **CRUD operations**
+- Apply **basic gamification** mechanisms
+- Practice full-stack web development principles
 
-# 3. Frontend
-cd frontend
-npm install
-npm start
-```
+---
 
-**Run:**
-- Frontend: http://localhost:3000
-- Backend: http://localhost:5000
+## Implemented Features
 
-## Technologies
+The following features have been **implemented and are fully functional**:
 
-**Backend:** Node.js, Express, PostgreSQL+PostGIS, MongoDB, JWT  
-**Frontend:** React, Leaflet, Axios
+### User Management
+- User registration and login
+- JWT-based authentication
+- User profile with XP and level information
 
-## Database
+### Web GIS Functionality
+- Interactive map using **Leaflet** and **OpenStreetMap**
+- Display of restaurant locations on the map
+- Location-based filtering (nearby restaurants)
 
-**PostgreSQL:** users, restaurants (PostGIS Point)  
-**MongoDB:** reviews, challenges, squads
+### Backend & Database
+- RESTful API developed with **Node.js and Express**
+- **PostgreSQL database with PostGIS extension**
+- Spatial queries for distance-based restaurant filtering
 
-## API Examples
-```
-POST /api/auth/register          → Register
-POST /api/auth/login             → Login
-GET  /api/restaurants/nearby     → Nearby restaurants
-POST /api/restaurants/checkin    → Check-in (earn 10 XP)
-GET  /api/challenges             → Challenge list
-POST /api/squads                 → Create group
-```
+### CRUD Operations
+- Create new restaurant entries (authenticated users)
+- Read and list restaurant data from the database
 
-## Project Structure
-```
-nerede-yesek/
-├── backend/        → API (Node.js + Express)
-├── frontend/       → Web UI (React)
-├── database/       → Setup scripts
-└── README.md
-```
+### Gamification
+- XP system based on user actions
+- Automatic level calculation
+- Leaderboard displaying top users
+
+---
+
+## System Architecture
+

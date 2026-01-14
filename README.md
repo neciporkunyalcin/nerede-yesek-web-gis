@@ -53,5 +53,4 @@ The following features have been **implemented and are fully functional**:
 
 ---
 
-## System Architecture
 

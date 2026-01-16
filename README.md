@@ -1,5 +1,5 @@
 # Nerede Yesek? - Social Food Map 
-
+http://13.53.130.201/
 **GMT 458 Web GIS Final Project**
 
 An interactive social food map application that helps users discover restaurants in Ankara, check-in to earn XP, and make group dining decisions with friends.
@@ -120,3 +120,4 @@ Access the application at [http://localhost:3000](http://localhost:3000).
 ### Reviews
 - `POST /api/restaurants/:id/reviews` - Add rate & review
 - `GET /api/restaurants/:id/reviews` - Get recent reviews
+
